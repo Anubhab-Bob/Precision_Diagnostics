@@ -1,0 +1,144 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	background-color: rgb(158, 204, 67);
+}
+
+h1 {
+	font-size: 3.2rem;
+	color: #ac0505;
+	margin-top: -2rem;
+	margin-bottom: 1rem;
+	font-variant: small-caps;
+}
+
+h2 {
+	font-size: 2.3rem;
+	color: #ac0505;
+	margin-bottom: 1rem;
+	font-variant: small-caps;
+}
+
+#home {
+	height: inherit;
+	width: inherit;
+	padding: 2rem;
+}
+
+.col-md-9{
+	padding: 1.5rem;
+	color:brown;
+	justify-content: space-evenly;
+	font-style: italic;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.img-circle {
+	border-radius: 50%;
+	height: 10rem;
+	width: 10rem;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#row {
+	display: flex;
+	justify-content: space-between;
+}
+
+#row1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+#row2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-group {
+	margin: 0.35rem;
+}
+
+.admin_buttons {
+	vertical-align: middle;
+}
+
+input,
+textarea {
+	color:darkslategrey;
+}
+
+.button {
+	font-size: 1.2rem;
+	padding: 1rem 0;
+	width: 10rem;
+	text-align: center;
+	border: 0.1rem solid #f37106;
+	border-radius: 25px 10px;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	text-decoration: none;
+	color: darkslategrey;
+	background-color: rgb(247, 220, 181);
+}
+
+.button:hover {
+	cursor: pointer;
+	box-shadow: -2rem 0.9rem 1rem 0 rgba(63, 106, 128, 0.5);
+	transform: translateY(-0.2rem);
+	transition: transform 200ms;
+}
+
+.modal {
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 5px;
+	color: #333;
+	font-family: system-ui, sans-serif;
+	line-height: 1.5;
+	border-style: ridge;
+	border-width: 0.36rem;
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+}
+  
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	.modal {
+	  -webkit-backdrop-filter: blur(10px);
+	  backdrop-filter: blur(10px);
+	  background-color: rgba(255, 255, 255, 0.5);  
+	}
+}
+  
+  
+  
+  
+  

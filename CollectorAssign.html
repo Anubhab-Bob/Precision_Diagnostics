@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assign Collectors</title>
+	<link rel="stylesheet" href="UpdateProfile.css?1">
+	<style>
+        .highlight {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            /*text-align: center; */
+           /* /* border-bottom: 1px solid #ddd;  */
+            padding: 10px;
+            border: none;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+		}
+		.display_box {
+			margin-top: 5rem;
+			width: 100%;
+		}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div id="home" class="justify-center flex-column flex-center">
+			<h1>Precision Diagnostic Laboratories</h1>
+			<h2>Collector Assignment Page</h2>
+			<div id="uid" hidden>19</div>
+			<div id="row" class="flex-row modal display_box">
+				<div class="form-group">
+					<div class="col-md-9">
+						<table id="populate" width="100%">
+							<tr>
+								<th style="width: 5%"> Booking ID </th>
+								<th style="width: 5%"> Test Name </th>
+								<th style="width: 10%"> Scheduled Date </th>
+								<th style="width: 20%"> Customer Name </th>
+								<th style="width: 10%"> Phone Number </th>
+								<th style="width: 40%"> Address </th>
+								<th style="width: 10%"> Pincode </th>
+								<th style="width: 10%"> Collector </th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<input id="assign" class="button" type="button" value="Assign">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="CollectorAssign.js?1"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Database Modifications</title>
+	<link rel="stylesheet" href="UpdateProfile.css?1">
+</head>
+<body>
+	<div class="container">
+		<div id="home" class="justify-center flex-column flex-center">
+			<h1>Precision Diagnostic Laboratories</h1>
+			<h2>Modify Database</h2>
+			<div id="uid" hidden>19</div>
+			<div class="modal">
+				<div id="row1" class="flex-row">
+					<!-- New Test Information -->
+					<div class="col-md-9 test-info">					
+						<h3>Add New Test</h3>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Test name:</label>
+								<div class="col-lg-8">
+									<input id="t_name" class="form-control" type="text" placeholder="Test_001">
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Test Price:</label>
+								<div class="col-lg-8">
+									<input id="t_price" class="form-control" type="number" placeholder="100.00">
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Department:</label>
+								<div class="col-lg-8">
+									<select id="t_dept" class="form-control"></select>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Test Preparation:</label>
+								<div class="col-lg-8">
+									<textarea id="t_prep" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Home Collection:</label>
+								<div class="col-lg-8">
+									<select id="t_home" class="form-control"></select>
+								</div>
+							</div>
+						</form>
+						<div class="col-md-9">
+							<input id="t_save" class="button" type="button" value="Save Test">
+						</div>
+					</div>
+
+					<!-- New Collector Information -->
+					<div class="col-md-9 test-info">					
+						<h3>Add New Collector</h3>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Collector name:</label>
+								<div class="col-lg-8">
+									<input id="c_name" class="form-control" type="text" placeholder="James Bond">
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Address:</label>
+								<div class="col-lg-8">
+									<textarea id="c_addr" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Phone Number:</label>
+								<div class="col-lg-8">
+									<input id="c_phone" class="form-control" type="number" placeholder="0000000000">
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">User name:</label>
+								<div class="col-lg-8">
+									<input id="c_uname" class="form-control" type="text" placeholder="user name">
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Password:</label>
+								<div class="col-lg-8">
+									<input id="c_pwd" class="form-control" type="password" placeholder="password">
+								</div>
+							</div>
+						</form>
+						<div class="col-md-9">
+							<input id="c_save" class="button" type="button" value="Save Collector">
+						</div>
+					</div>
+
+					<!-- New Equipment Information -->
+					<div class="col-md-9 test-info">					
+						<h3>Add New Equipment</h3>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Equipment name:</label>
+								<div class="col-lg-8">
+									<input id="e_name" class="form-control" type="text" placeholder="Syringe">
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Department:</label>
+								<div class="col-lg-8">
+									<select id="e_dept" class="form-control"></select>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Quantity:</label>
+								<div class="col-lg-8">
+									<input id="e_qty" class="form-control" type="number" placeholder="10">
+								</div>
+							</div>
+						</form>
+						<div class="col-md-9">
+							<input id="e_save" class="button" type="button" value="Save Equipment">
+						</div>
+					</div>
+				</div>
+				<hr width="100%" style="opacity: 100%;">
+
+				<div id="row2" class="flex-row">
+					<!-- Alter Test Information -->
+					<div class="col-md-9 test-info">					
+						<h3>Change test Price</h3>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Test name:</label>
+								<div class="col-lg-8">
+									<select id="t_nameAlter" class="form-control"></select>
+								</div>
+							</div>
+						</form>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Test Price:</label>
+								<div class="col-lg-8">
+									<input id="t_priceAlter" class="form-control" type="number" placeholder="100.00">
+								</div>
+							</div>
+						</form>
+						<div class="col-md-9">
+							<input id="t_saveAlter" class="button" type="button" value="Save Price">
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="DBModify.js?1"></script>
+</body>
+</html>

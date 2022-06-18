@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Home Page</title>
+	<link rel="stylesheet" href="UpdateProfile.css?1">
+</head>
+<body>
+	<div class="container">
+		<div id="home" class="justify-center flex-column flex-center">
+			<h1>Precision Diagnostic Laboratories</h1>
+			<h2>Welcome Admin</h2>
+			<div id="uid" hidden>19</div>
+			<div id="row" class="flex-row modal">
+				<div class="form-group admin_buttons">
+					<div class="col-md-9">
+						<input id="modify" class="button" type="button" value="Modify DB" onclick="modifyDB()">
+					</div>
+					<div class="col-md-9">
+						<input id="assign" class="button" type="button" value="Assign Collector" onclick="loadCollection()">
+					</div>
+					<div class="col-md-9">
+						<input id="reschedule" class="button" type="button" value="Reschedule" onclick="rescheduleCollection()">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function modifyDB() {
+			window.location.replace("DBModify.html");
+		}
+
+		function loadCollection() {
+			window.location.replace("CollectorAssign.html");
+		}
+
+		function rescheduleCollection() {
+			window.location.replace("Reschedule.html");
+		}
+	</script>
+</body>
+</html>

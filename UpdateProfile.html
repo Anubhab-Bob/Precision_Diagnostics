@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<link rel="stylesheet" href="UpdateProfile.css">
+</head>
+<body>
+	<div class="container">
+		<div id="home" class="justify-center flex-column flex-center">
+			<h1>Precision Diagnostic Laboratories</h1>
+			<h2>Edit Profile</h2>
+			<div id="uid" hidden>21</div>
+			<div id="row" class="flex-row modal">
+				<!-- edit form column -->
+				<div class="col-md-9 personal-info">
+					
+					<h3>Personal info</h3>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-lg-3 control-label">First name:</label>
+							<div class="col-lg-8">
+								<input id="f_name" class="form-control" type="text" value="Jane">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Last name:</label>
+							<div class="col-lg-8">
+								<input id="l_name" class="form-control" type="text" value="Bishop">
+							</div>
+						</div>									
+						<div class="form-group">
+							<label class="col-md-3 control-label">Username:</label>
+							<div class="col-md-8">
+								<input id="uname" class="form-control" type="text" value="janeuser" readonly>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">Password:</label>
+							<div class="col-md-8">
+								<input id="pwd" class="form-control" type="password" value="11111122333">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">Confirm password:</label>
+							<div class="col-md-8">
+								<input class="form-control" type="password">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-9 medical-info">
+					<h3>Medical info</h3>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Gender:</label>
+							<div class="col-lg-8">
+								<input id="gen" class="form-control" type="text" value="Male" readonly>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Blood Group:</label>
+							<div class="col-lg-8">
+								<input id="bgrp" class="form-control" type="text" value="AB+" readonly>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-9 contact-info">
+					<h3>Contact info</h3>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Email:</label>
+							<div class="col-lg-8">
+								<input id="email" class="form-control" type="text" value="janesemail@gmail.com">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Phone Number:</label>
+							<div class="col-lg-8">
+								<input id="phone" class="form-control" type="number" value="9784652133">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Address:</label>
+							<div class="col-lg-8">
+								<textarea id="address" class="form-control" rows="5">Pasher Bari</textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-3 control-label">Pincode:</label>
+							<div class="col-lg-8">
+								<input id="pincode" class="form-control" type="number" value="00000">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-3 control-label"></label>
+				<div class="col-md-8">
+					<input id="save" class="button" type="button" value="Save Changes">
+					<span></span>
+					<input id="cancel" type="reset" class="button" value="Cancel">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="UpdateProfile.js?1"></script>
+	</body>
+</html>
